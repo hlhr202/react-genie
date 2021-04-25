@@ -38,6 +38,6 @@
     "@types/styled-components": "^5.1.9",
     "react-animations": "^1.0.0",
     "react-intersection-observer": "^8.31.1",
-    "styled-components": "^4.4.1"
+    "styled-components": "~4.4.1"
   }
 }
