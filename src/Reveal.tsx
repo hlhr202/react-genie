@@ -1,4 +1,4 @@
-import { VisibilityProperty } from 'csstype';
+import { Property } from 'csstype';
 import React, { useEffect, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { Animation } from './reveal-animations';
@@ -59,12 +59,10 @@ export const Reveal: React.FC<{
     ? children.props.className
     : '';
 
-  let visibility = (show ? 'visible' : 'hidden') as VisibilityProperty;
-
   let extraProps = {
     className,
     style: {
-      visibility,
+      visibility: (show ? 'visible' : 'hidden') as Property.Visibility,
       ...style,
     },
     ref,
